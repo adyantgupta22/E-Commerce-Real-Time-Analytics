@@ -11,7 +11,6 @@ A production-ready analytics service that processes user events and provides rea
 - [Project Structure](#project-structure)
 - [Configuration](#configuration)
 - [Testing](#testing)
-- [Future Improvements](#future-improvements)
 
 ---
 
