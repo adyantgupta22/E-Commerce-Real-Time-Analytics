@@ -1,0 +1,28 @@
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - redis
+    environment:
+      - SPRING_DATA_REDIS_HOST=redis
+
+  frontend:
+    build: ./frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
+
+  data-generator:
+    build: ./data-generator
+    depends_on:
+      - backend
+    environment:
+      - INGESTION_API_URL=http://backend:8080/api/events
