@@ -2,6 +2,8 @@
 
 A production-ready analytics service that processes user events and provides real-time insights for e-commerce platforms.
 
+![Project Screenshot](/RealTime-Analytics-Dashboard.png)
+
 ## 📋 Table of Contents
 
 - [Features](#features)
@@ -491,3 +493,4 @@ ab -n 100 -c 10 -p event.json -T application/json http://localhost:8080/api/even
 ```
 
 ---
+
