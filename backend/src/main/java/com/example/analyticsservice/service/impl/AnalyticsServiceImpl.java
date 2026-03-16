@@ -20,7 +20,6 @@ public class AnalyticsServiceImpl implements AnalyticsService {
     private static final String ACTIVE_USERS_PREFIX = "active_users:";
     private static final String PAGE_VIEWS_PREFIX = "page_views:";
     private static final String ACTIVE_SESSIONS_PREFIX = "active_sessions:";
-    private static final String TEMP_PAGE_VIEWS_KEY = "temp_page_views";
 
     private final StringRedisTemplate redisTemplate;
 
